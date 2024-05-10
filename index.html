@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="info.html">E-waste</a></li>
+            <li><a href="map.html">Recycling Centers</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <img src="ewaste.jpg" alt="Descriptive text about the image">
+        <p>This is a paragraph to show simple HTML content. Learn more about what we do and how you can contribute to recycling efforts in your area.</p>
+        <button id="moreInfoButton">Learn More</button>
+        <div id="additionalInfo">
+            <p>Here is some more information about recycling centers...</p>
+        </div>
+    </div>
+    <footer>
+        <p>Contact Us</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script>
+    document.getElementById('moreInfoButton').addEventListener('click', function() {
+        var infoDiv = document.getElementById('additionalInfo');
+        infoDiv.classList.toggle('show');
+    });
+    </script>
+</body>
+</html>
