@@ -195,8 +195,9 @@ body {
 }
 
 .card-title {
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin-bottom: 5px;
+    font-family: 'Arial', sans-serif; /* Improved font design */
 }
 
 .card-sub-title {
@@ -205,10 +206,23 @@ body {
     margin-bottom: 15px;
 }
 
+
 .card-desc {
+    opacity: 0; /* Initially hidden */
     font-size: 0.85rem;
     line-height: 17px;
-}
+    max-height: 0; /* Collapse the element */
+    overflow: hidden;
+    transition: opacity 1.5s ease, max-height 1.5s ease; /* Fade and expand transition */
+    font-family: 'Arial', sans-serif; /* Improved font design */
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    color: #333;
+  }
+  .card-desc.visible {
+    opacity: 1; /* Fully visible */
+    max-height: 1000px; /* Expand to a height greater than the content's height */
+  }
 
 .am-sect {
     padding-top: 100px;
@@ -401,4 +415,28 @@ body {
         display: none;
     }
 }
+
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
 
