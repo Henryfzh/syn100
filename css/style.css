@@ -243,6 +243,85 @@ body {
     text-align: center;
 }
 
+#ip {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 80pc;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, rgba(0,123,255,1) 0%, rgba(0,216,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1.5px;
+    padding: 10px 0;
+}
+
+#plot-container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+#comment {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#comment p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.fade-in {
+    display: block;
+    opacity: 1;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: rgba(0,123,255,1);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
 
 .card-desc {
     opacity: 0; /* Initially hidden */
